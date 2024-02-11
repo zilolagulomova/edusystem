@@ -13,43 +13,73 @@
   <body class="p-0 m-0 box-border font-raleway">
     <header class="">
       <!-- NAVBAR PART -->
-
-      <div></div>
+      <div class="flex items-center bg-darkBlue border-b border-gray-borderDark ">
+        <a class="w-[288px] pl-3 hidden md:block" href="#"
+          ><img
+            class="py-3"
+            width="200px"
+            src="images/logo.svg"
+            alt="EDU SYSTEM"
+        /></a>
+        <a href="index.html" class="md:hidden">
+          <img src="images/logo-edusystem.png" class="block pl-2"  width="40px" height="40px" alt="">
+        </a>
+        <div
+          class="flex justify-between pt-[18px] pb-[18px] sm:w-full items-center"
+        >
+          <form 
+            class="ml-6 lg:ml-0 rounded py-2 px-3 mr-6 bg-white flex items-center sm:w-full sm:max-w-80 justify-between"
+          >
+            <input
+              class="outline-0 placeholder:text-gray-primary text-13 leading-4 placeholder:tracking-wide"
+              placeholder="Qidirish"
+              type="text"
+            />
+            <img
+              class="cursor-pointer"
+              src="images/search.svg"
+              alt="Qidirish"
+            />
+          </form>
+          <div class="flex items-center gap-4 mr-10 cursor-pointer">
+            <img src="images/profile.svg" alt="Profile" />
+            <div class="text-white text-xs font-semibold tracking-wide">
+              John Doe
+            </div>
+            <img src="images/down-arrow.svg" alt="arrowDown" />
+          </div>
+        </div>
+      </div>
 
       <!-- SIDEBAR AND TABLE PART -->
       <div class="grid grid-cols-6">
         <!--SIDEBAR  -->
-        <div class="md:col-span-1 col-span-2 bg-darkBlue flex flex-col justify-between h-screen">
-          <div class=" flex flex-col">
-            <a class="border-r border-b border-mainGray-borderDark" href="#"
-              ><img
-                class="py-3"
-                max-width="250px"
-                max-height="50px"
-                src="images/logo.svg"
-                alt="EDU SYSTEM"
-            /></a>
-            <div class="md:pl-8 pl-2">
+        <div
+          class="col-span-1 hidden bg-darkBlue h-screen md:flex md:flex-col justify-between"
+        >
+          <div class="flex flex-col">
               <button
-                class="flex items-center gap-4 py-4 cursor-pointer focus:bg-mainColor"
+                class="flex pl-3 items-center md:gap-4 py-4 cursor-pointer focus:bg-green"
               >
                 <img src="images/check_circle.svg" alt="check" />
                 <div class="text-white font-medium tracking-wider">Tasklar</div>
               </button>
               <button
-                class="flex items-center gap-4 py-4 cursor-pointer focus:bg-mainColor"
+                class="flex pl-3 items-center md:gap-4 py-4 cursor-pointer focus:bg-green"
               >
                 <img src="images/add_to_photos.svg" alt="check" />
                 <div class="text-white font-medium tracking-wider">Lidlar</div>
               </button>
               <button
-                class="flex items-center gap-4 py-4 cursor-pointer focus:bg-mainColor"
+                class="flex pl-3 items-center md:gap-4 gap-2 py-4 cursor-pointer focus:bg-green"
               >
                 <img src="images/rule.svg" alt="check" />
-                <div class="text-white font-medium tracking-wider">Yo'qlama</div>
+                <div class="text-white font-medium tracking-wider">
+                  Yo'qlama
+                </div>
               </button>
               <button
-                class="flex items-center gap-4 py-4 cursor-pointer focus:bg-mainColor"
+                class="flex pl-3 items-center gap-4 py-4 cursor-pointer focus:bg-green"
               >
                 <img src="images/person.svg" alt="check" />
                 <div class="text-white font-medium tracking-wider">
@@ -57,34 +87,40 @@
                 </div>
               </button>
               <button
-                class="flex items-center gap-4 py-4 cursor-pointer focus:bg-mainColor"
+                class="flex pl-3 items-center gap-4 py-4 cursor-pointer focus:bg-green"
               >
                 <img src="images/Group.svg" alt="check" />
-                <div class="text-white font-medium tracking-wider">Guruhlar</div>
+                <div class="text-white font-medium tracking-wider">
+                  Guruhlar
+                </div>
               </button>
               <button
-                class="flex items-center gap-4 py-4 cursor-pointer focus:bg-mainColor"
+                class="flex pl-3 items-center gap-4 py-4 cursor-pointer focus:bg-green"
               >
                 <img src="images/teacher.svg" alt="check" />
-                <div class="text-white font-medium tracking-wider">Ustozlar</div>
+                <div class="text-white font-medium tracking-wider">
+                  Ustozlar
+                </div>
               </button>
               <button
-                class="flex items-center gap-4 py-4 cursor-pointer focus:bg-mainColor"
+                class="flex pl-3 items-center gap-4 py-4 cursor-pointer focus:bg-green"
               >
                 <img src="images/archive.svg" alt="check" />
                 <div class="text-white font-medium tracking-wider">Arxiv</div>
               </button>
               <button
-                class="flex items-center justify-between pr-[7%] py-4 cursor-pointer focus:bg-mainColor"
+                class="flex pl-3 items-center justify-between pr-[7%] py-4 cursor-pointer focus:bg-green"
               >
                 <div class="flex items-center gap-3">
                   <img src="images/monetization_on.svg" alt="check" />
-                  <div class="text-white font-medium tracking-wider">Moliya</div>
+                  <div class="text-white font-medium tracking-wider">
+                    Moliya
+                  </div>
                 </div>
                 <img src="images/down-arrow.svg" alt="arrow" />
               </button>
               <button
-                class="flex items-center justify-between pr-[7%] py-4 cursor-pointer focus:bg-mainColor"
+                class="flex pl-3 items-center justify-between pr-[7%] py-4 cursor-pointer focus:bg-green"
               >
                 <div class="flex items-center gap-4">
                   <img src="images/comment.svg" alt="check" />
@@ -94,43 +130,77 @@
                 </div>
                 <img src="images/down-arrow.svg" alt="arrow" />
               </button>
-            </div>
           </div>
           <button
-            class="flex text-white py-4 md:pl-8 border-t border-mainGray-border items-center gap-3 focus:bg-mainColor"
+            class="flex text-white py-4 w-full pl-3 border-t border-gray-border items-center gap-3 focus:bg-green"
           >
             <img src="images/Setting.svg" alt="" />
             Sozlamalar
           </button>
         </div>
+        <div
+          class="col-span-1 flex flex-col md:hidden pl-2 bg-darkBlue h-screen"
+        >
+          <div class="flex flex-col">
+              <button
+                class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+              >
+                <img src="images/check_circle.svg" alt="check" />
+              </button>
+              <button
+                class="items-center py-[18px] gap-4 cursor-pointer focus:bg-green"
+              >
+                <img src="images/add_to_photos.svg" alt="check" />
+              </button>
+              <button
+                class=" items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+              >
+                <img src="images/rule.svg" alt="check" />
+              </button>
+              <button
+                class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+              >
+                <img src="images/person.svg" alt="check" />
+              </button>
+              <button
+                class="  items-center gap-4 py-[23px] cursor-pointer focus:bg-green"
+              >
+                <img src="images/Group.svg" alt="check" />
+              </button>
+              <button
+                class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+              >
+                <img src="images/teacher.svg" alt="check" />
+              </button>
+              <button
+                class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+              >
+                <img src="images/archive.svg" alt="check" />
+              </button>
+              <button
+                class="items-center justify-between py-[18px] cursor-pointer focus:bg-green"
+              >
+                <div>
+                  <img src="images/monetization_on.svg" alt="check" />
+                </div>
+              </button>
+              <button
+                class="items-center justify-between py-[18px] cursor-pointer focus:bg-green"
+              >
+                <div>
+                  <img src="images/comment.svg" alt="check" />
+                </div>
+              </button>
+          </div>
+          <button
+            class="text-white py-4 border-t border-gray-border items-center gap-3 focus:bg-green"
+          >
+            <img src="images/Setting.svg" alt="" />
+          </button>
+        </div>
 
         <!-- TABLE -->
-        <div class="md:col-span-5 col-span-4">
-          <div
-            class="flex py-3 items-center justify-between bg-darkBlue flex flex-row items-center border-b border-mainGray-borderDark"
-          >
-            <form
-              class="ml-6 rounded py-2 px-3 bg-white flex items-center w-full max-w-80 justify-between"
-            >
-              <input
-                class="outline-0 placeholder:text-mainGray-primary text-13 leading-4 placeholder:tracking-wide"
-                placeholder="Qidirish"
-                type="text"
-              />
-              <img
-                class="cursor-pointer"
-                src="images/search.svg"
-                alt="Qidirish"
-              />
-            </form>
-            <div class="flex items-center gap-4 mr-10 cursor-pointer">
-              <img src="images/profile.svg" alt="Profile" />
-              <div class="text-white text-xs font-semibold tracking-wide">
-                John Doe
-              </div>
-              <img src="images/down-arrow.svg" alt="arrowDown" />
-            </div>
-          </div>
+        <div class="col-span-5 bg-white">
           <div class="flex items-center justify-between px-6 pt-6 pb-2">
             <div class="font-bold text-darkBlue-fontColor">LIDLAR (1548)</div>
             <img class="cursor-pointer" src="images/Component.svg" alt="" />
@@ -148,24 +218,24 @@
               <div class="flex items-center gap-4">
                 <input class="accent-blue-500 text-3xl" type="checkbox" />
                 <div>ID</div>
-                <div class="pl-8 pr-[145px]">Ism-familiya</div>
+                <div class="pl-8 pr-[160px]">Ism-familiya</div>
               </div>
               <div>Telefon raqam</div>
-              <div class="pl-[105px]">so’nggi aloqa</div>
-              <div class="flex items-center gap-2 pl-[320px]">
+              <div class="pl-[100px]">so’nggi aloqa</div>
+              <div class="flex items-center gap-2 pl-[325px]">
                 status
                 <img src="images/down-arrow.svg" alt="" />
               </div>
-              <div class="pl-[115px]">tug'ulgan kuni</div>
-              <div class="flex items-center gap-2 pl-[105px]">
+              <div class="pl-[120px]">tug'ulgan kuni</div>
+              <div class="flex items-center gap-2 pl-[110px]">
                 manba
                 <img src="images/down-arrow.svg" alt="" />
               </div>
-              <div class="flex items-center gap-2 pl-[155px]">
+              <div class="flex items-center gap-2 pl-[160px]">
                 qo'shgan admin
                 <img src="images/down-arrow.svg" alt="" />
               </div>
-              <div class="flex items-center gap-2 pl-24 pr-[78px]">
+              <div class="flex items-center gap-2 pl-24 pr-[50px]">
                 hudud
                 <img src="images/down-arrow.svg" alt="" />
               </div>
@@ -177,19 +247,23 @@
               <div class="flex items-center gap-4">
                 <input class="accent-blue-500 text-3xl" type="checkbox" />
                 <div>0255</div>
-                <div class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1">
+                <div
+                  class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1"
+                >
                   <img src="images/user.svg" alt="user" />
                   <div class="">
-                    <p>Ronald Richards</p>
-                    <span>01.01.2021 / 14:40</span> 
+                    <p class="max-w-[195px] line-clamp-1">Ronald Richards abdullayivech</p>
+                    <span>01.01.2021 / 14:40</span>
                   </div>
                 </div>
               </div>
-              <div class="flex items-center max-w-[135px] line-clamp-1 flex-wrap">
+              <div
+                class="flex items-center max-w-[135px] line-clamp-1 flex-wrap"
+              >
                 +998 94 567 89 90
                 <img src="images/telegram.svg" alt="telegram" />
               </div>
-              <div class="w-[330px] ">
+              <div class="w-[330px]">
                 <div class="flex items-center gap-2">
                   <img src="images/arrow_right.svg" alt="arrow_right" />
                   <img src="images/caller.svg" alt="phone" />
@@ -200,7 +274,9 @@
                   to'liq qilib olib kelib kursga yozilar ekan
                 </div>
               </div>
-              <div class="flex items-center gap-2 text-mainRed border border-mainRed p-1 rounded ">
+              <div
+                class="flex items-center gap-2 text-red border border-red p-1 rounded"
+              >
                 Status yo'q
                 <img src="images/code.svg" alt="" />
               </div>
@@ -209,12 +285,15 @@
                 Osmondagi bolalar
                 <img src="images/down-arrow.svg" alt="" />
               </div>
-              <div class="pr-10">
-                Saidakmal Abdurazzoqov 
-                <p class="text-mainGray">Chilonzor</p>
+              <div class="">
+                Saidakmal Abdurazzoqov
+                <p class="text-gray">Chilonzor</p>
               </div>
               <div></div>
-              <div class="w-[230px]">Porttitor sit risus lacus, nunc cum odio massa commodo enim. Nisl urna rhoncus cursus vitae.</div>
+              <div class="w-[230px]">
+                Porttitor sit risus lacus, nunc cum odio massa commodo enim.
+                Nisl urna rhoncus cursus vitae.
+              </div>
             </div>
             <div
               class="bg-lightBlue p-4 flex justify-between w-[2245px] items-start text-sm text-darkBlue-fontColor"
@@ -222,19 +301,23 @@
               <div class="flex items-center gap-4">
                 <input class="accent-blue-500 text-3xl" type="checkbox" />
                 <div>0255</div>
-                <div class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1">
+                <div
+                  class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1"
+                >
                   <img src="images/user.svg" alt="user" />
                   <div class="">
-                    <p>Ronald Richards</p>
-                    <span>01.01.2021 / 14:40</span> 
+                    <p class="max-w-[195px] line-clamp-1">Ronald Richards abdullayivech</p>
+                    <span>01.01.2021 / 14:40</span>
                   </div>
                 </div>
               </div>
-              <div class="flex items-center max-w-[135px] line-clamp-1 flex-wrap">
+              <div
+                class="flex items-center max-w-[135px] line-clamp-1 flex-wrap"
+              >
                 +998 94 567 89 90
                 <img src="images/telegram.svg" alt="telegram" />
               </div>
-              <div class="w-[330px] ">
+              <div class="w-[330px]">
                 <div class="flex items-center gap-2">
                   <img src="images/arrow_right.svg" alt="arrow_right" />
                   <img src="images/caller.svg" alt="phone" />
@@ -245,7 +328,9 @@
                   to'liq qilib olib kelib kursga yozilar ekan
                 </div>
               </div>
-              <div class="flex items-center gap-2 text-mainRed border border-mainRed p-1 rounded ">
+              <div
+                class="flex items-center gap-2 text-red border border-red p-1 rounded"
+              >
                 Status yo'q
                 <img src="images/code.svg" alt="" />
               </div>
@@ -254,12 +339,15 @@
                 Osmondagi bolalar
                 <img src="images/down-arrow.svg" alt="" />
               </div>
-              <div class="pr-10">
-                Saidakmal Abdurazzoqov 
-                <p class="text-mainGray">Chilonzor</p>
+              <div class="">
+                Saidakmal Abdurazzoqov
+                <p class="text-gray">Chilonzor</p>
               </div>
-              <div></div>
-              <div class="w-[230px]">Porttitor sit risus lacus, nunc cum odio massa commodo enim. Nisl urna rhoncus cursus vitae.</div>
+              <div class=""></div>
+              <div class="w-[230px]">
+                Porttitor sit risus lacus, nunc cum odio massa commodo enim.
+                Nisl urna rhoncus cursus vitae.
+              </div>
             </div>
             <div
               class="bg-lightBlue p-4 flex justify-between w-[2245px] items-start text-sm text-darkBlue-fontColor"
@@ -267,19 +355,23 @@
               <div class="flex items-center gap-4">
                 <input class="accent-blue-500 text-3xl" type="checkbox" />
                 <div>0255</div>
-                <div class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1">
+                <div
+                  class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1"
+                >
                   <img src="images/user.svg" alt="user" />
                   <div class="">
-                    <p>Ronald Richards</p>
-                    <span>01.01.2021 / 14:40</span> 
+                    <p class="max-w-[195px] line-clamp-1">Ronald Richards abdullayivech</p>
+                    <span>01.01.2021 / 14:40</span>
                   </div>
                 </div>
               </div>
-              <div class="flex items-center max-w-[135px] line-clamp-1 flex-wrap">
+              <div
+                class="flex items-center max-w-[135px] line-clamp-1 flex-wrap"
+              >
                 +998 94 567 89 90
                 <img src="images/telegram.svg" alt="telegram" />
               </div>
-              <div class="w-[330px] ">
+              <div class="w-[330px]">
                 <div class="flex items-center gap-2">
                   <img src="images/arrow_right.svg" alt="arrow_right" />
                   <img src="images/caller.svg" alt="phone" />
@@ -290,7 +382,9 @@
                   to'liq qilib olib kelib kursga yozilar ekan
                 </div>
               </div>
-              <div class="flex items-center gap-2 text-mainRed border border-mainRed p-1 rounded ">
+              <div
+                class="flex items-center gap-2 text-red border border-red p-1 rounded"
+              >
                 Status yo'q
                 <img src="images/code.svg" alt="" />
               </div>
@@ -299,12 +393,15 @@
                 Osmondagi bolalar
                 <img src="images/down-arrow.svg" alt="" />
               </div>
-              <div class="pr-10">
-                Saidakmal Abdurazzoqov 
-                <p class="text-mainGray">Chilonzor</p>
+              <div class="">
+                Saidakmal Abdurazzoqov
+                <p class="text-gray">Chilonzor</p>
               </div>
               <div></div>
-              <div class="w-[230px]">Porttitor sit risus lacus, nunc cum odio massa commodo enim. Nisl urna rhoncus cursus vitae.</div>
+              <div class="w-[230px]">
+                Porttitor sit risus lacus, nunc cum odio massa commodo enim.
+                Nisl urna rhoncus cursus vitae.
+              </div>
             </div>
             <div
               class="bg-lightBlue p-4 flex justify-between w-[2245px] items-start text-sm text-darkBlue-fontColor"
@@ -312,19 +409,23 @@
               <div class="flex items-center gap-4">
                 <input class="accent-blue-500 text-3xl" type="checkbox" />
                 <div>0255</div>
-                <div class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1">
+                <div
+                  class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1"
+                >
                   <img src="images/user.svg" alt="user" />
                   <div class="">
-                    <p>Ronald Richards</p>
-                    <span>01.01.2021 / 14:40</span> 
+                    <p class="max-w-[195px] line-clamp-1">Ronald Richards</p>
+                    <span>01.01.2021 / 14:40</span>
                   </div>
                 </div>
               </div>
-              <div class="flex items-center max-w-[135px] line-clamp-1 flex-wrap">
+              <div
+                class="flex items-center max-w-[135px] line-clamp-1 flex-wrap"
+              >
                 +998 94 567 89 90
                 <img src="images/telegram.svg" alt="telegram" />
               </div>
-              <div class="w-[330px] ">
+              <div class="w-[330px]">
                 <div class="flex items-center gap-2">
                   <img src="images/arrow_right.svg" alt="arrow_right" />
                   <img src="images/caller.svg" alt="phone" />
@@ -335,7 +436,9 @@
                   to'liq qilib olib kelib kursga yozilar ekan
                 </div>
               </div>
-              <div class="flex items-center gap-2 text-mainRed border border-mainRed p-1 rounded ">
+              <div
+                class="flex items-center gap-2 text-red border border-red p-1 rounded"
+              >
                 Status yo'q
                 <img src="images/code.svg" alt="" />
               </div>
@@ -344,12 +447,15 @@
                 Osmondagi bolalar
                 <img src="images/down-arrow.svg" alt="" />
               </div>
-              <div class="pr-10">
-                Saidakmal Abdurazzoqov 
-                <p class="text-mainGray">Chilonzor</p>
+              <div class="">
+                Saidakmal Abdurazzoqov
+                <p class="text-gray">Chilonzor</p>
               </div>
               <div></div>
-              <div class="w-[230px]">Porttitor sit risus lacus, nunc cum odio massa commodo enim. Nisl urna rhoncus cursus vitae.</div>
+              <div class="w-[230px]">
+                Porttitor sit risus lacus, nunc cum odio massa commodo enim.
+                Nisl urna rhoncus cursus vitae.
+              </div>
             </div>
             <div
               class="bg-lightBlue p-4 flex justify-between w-[2245px] items-start text-sm text-darkBlue-fontColor"
@@ -357,19 +463,23 @@
               <div class="flex items-center gap-4">
                 <input class="accent-blue-500 text-3xl" type="checkbox" />
                 <div>0255</div>
-                <div class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1">
+                <div
+                  class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1"
+                >
                   <img src="images/user.svg" alt="user" />
                   <div class="">
-                    <p>Ronald Richards</p>
-                    <span>01.01.2021 / 14:40</span> 
+                    <p class="max-w-[195px] line-clamp-1">Ronald Richards</p>
+                    <span>01.01.2021 / 14:40</span>
                   </div>
                 </div>
               </div>
-              <div class="flex items-center max-w-[135px] line-clamp-1 flex-wrap">
+              <div
+                class="flex items-center max-w-[135px] line-clamp-1 flex-wrap"
+              >
                 +998 94 567 89 90
                 <img src="images/telegram.svg" alt="telegram" />
               </div>
-              <div class="w-[330px] ">
+              <div class="w-[330px]">
                 <div class="flex items-center gap-2">
                   <img src="images/arrow_right.svg" alt="arrow_right" />
                   <img src="images/caller.svg" alt="phone" />
@@ -380,7 +490,9 @@
                   to'liq qilib olib kelib kursga yozilar ekan
                 </div>
               </div>
-              <div class="flex items-center gap-2 text-mainRed border border-mainRed p-1 rounded ">
+              <div
+                class="flex items-center gap-2 text-red border border-red p-1 rounded"
+              >
                 Status yo'q
                 <img src="images/code.svg" alt="" />
               </div>
@@ -389,12 +501,15 @@
                 Osmondagi bolalar
                 <img src="images/down-arrow.svg" alt="" />
               </div>
-              <div class="pr-10">
-                Saidakmal Abdurazzoqov 
-                <p class="text-mainGray">Chilonzor</p>
+              <div class="">
+                Saidakmal Abdurazzoqov
+                <p class="text-gray">Chilonzor</p>
               </div>
               <div></div>
-              <div class="w-[230px]">Porttitor sit risus lacus, nunc cum odio massa commodo enim. Nisl urna rhoncus cursus vitae.</div>
+              <div class="w-[230px]">
+                Porttitor sit risus lacus, nunc cum odio massa commodo enim.
+                Nisl urna rhoncus cursus vitae.
+              </div>
             </div>
             <div
               class="bg-lightBlue p-4 flex justify-between w-[2245px] items-start text-sm text-darkBlue-fontColor"
@@ -402,19 +517,23 @@
               <div class="flex items-center gap-4">
                 <input class="accent-blue-500 text-3xl" type="checkbox" />
                 <div>0255</div>
-                <div class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1">
+                <div
+                  class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1"
+                >
                   <img src="images/user.svg" alt="user" />
                   <div class="">
-                    <p>Ronald Richards</p>
-                    <span>01.01.2021 / 14:40</span> 
+                    <p class="max-w-[195px] line-clamp-1">Ronald Richards</p>
+                    <span>01.01.2021 / 14:40</span>
                   </div>
                 </div>
               </div>
-              <div class="flex items-center max-w-[135px] line-clamp-1 flex-wrap">
+              <div
+                class="flex items-center max-w-[135px] line-clamp-1 flex-wrap"
+              >
                 +998 94 567 89 90
                 <img src="images/telegram.svg" alt="telegram" />
               </div>
-              <div class="w-[330px] ">
+              <div class="w-[330px]">
                 <div class="flex items-center gap-2">
                   <img src="images/arrow_right.svg" alt="arrow_right" />
                   <img src="images/caller.svg" alt="phone" />
@@ -425,7 +544,9 @@
                   to'liq qilib olib kelib kursga yozilar ekan
                 </div>
               </div>
-              <div class="flex items-center gap-2 text-mainRed border border-mainRed p-1 rounded ">
+              <div
+                class="flex items-center gap-2 text-red border border-red p-1 rounded"
+              >
                 Status yo'q
                 <img src="images/code.svg" alt="" />
               </div>
@@ -434,12 +555,15 @@
                 Osmondagi bolalar
                 <img src="images/down-arrow.svg" alt="" />
               </div>
-              <div class="pr-10">
-                Saidakmal Abdurazzoqov 
-                <p class="text-mainGray">Chilonzor</p>
+              <div class="">
+                Saidakmal Abdurazzoqov
+                <p class="text-gray">Chilonzor</p>
               </div>
               <div></div>
-              <div class="w-[230px]">Porttitor sit risus lacus, nunc cum odio massa commodo enim. Nisl urna rhoncus cursus vitae.</div>
+              <div class="w-[230px]">
+                Porttitor sit risus lacus, nunc cum odio massa commodo enim.
+                Nisl urna rhoncus cursus vitae.
+              </div>
             </div>
             <div
               class="bg-lightBlue p-4 flex justify-between w-[2245px] items-start text-sm text-darkBlue-fontColor"
@@ -447,19 +571,23 @@
               <div class="flex items-center gap-4">
                 <input class="accent-blue-500 text-3xl" type="checkbox" />
                 <div>0255</div>
-                <div class="pl-3 flex items-center gap-2 max-w-[170px] line-clamp-1">
+                <div
+                  class="pl-3 flex items-center gap-2 "
+                >
                   <img src="images/user.svg" alt="user" />
                   <div class="">
-                    <p>Ronald Richards</p>
-                    <span>01.01.2021 / 14:40</span> 
+                    <p class="max-w-[195px] line-clamp-1">Richard Richards</p>
+                    <span>01.01.2021 / 14:40</span>
                   </div>
                 </div>
               </div>
-              <div class="flex items-center max-w-[135px] line-clamp-1 flex-wrap">
+              <div
+                class="flex items-center max-w-[135px] line-clamp-1 flex-wrap"
+              >
                 +998 94 567 89 90
                 <img src="images/telegram.svg" alt="telegram" />
               </div>
-              <div class="w-[330px] ">
+              <div class="w-[330px]">
                 <div class="flex items-center gap-2">
                   <img src="images/arrow_right.svg" alt="arrow_right" />
                   <img src="images/caller.svg" alt="phone" />
@@ -470,7 +598,9 @@
                   to'liq qilib olib kelib kursga yozilar ekan
                 </div>
               </div>
-              <div class="flex items-center gap-2 text-mainRed border border-mainRed p-1 rounded ">
+              <div
+                class="flex items-center gap-2 text-red border border-red p-1 rounded"
+              >
                 Status yo'q
                 <img src="images/code.svg" alt="" />
               </div>
@@ -479,22 +609,26 @@
                 Osmondagi bolalar
                 <img src="images/down-arrow.svg" alt="" />
               </div>
-              <div class="pr-10">
-                Saidakmal Abdurazzoqov 
-                <p class="text-mainGray">Chilonzor</p>
+              <div class="">
+                Saidakmal Abdurazzoqov
+                <p class="text-gray">Chilonzor</p>
               </div>
               <div></div>
-              <div class="w-[230px]">Porttitor sit risus lacus, nunc cum odio massa commodo enim. Nisl urna rhoncus cursus vitae.</div>
+              <div class="w-[230px]">
+                Porttitor sit risus lacus, nunc cum odio massa commodo enim.
+                Nisl urna rhoncus cursus vitae.
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- FOOTER -->
       <div class="p-3 flex justify-end mr-4">
-        <div class="flex items-center gap-1">1-30 
-          <span class="text-mainGray">of 150</span>
-          <div class="mx-4"><img src="images/arrow__right.svg" alt=""></div>
-          <div><img src="images/arrow__left.svg" alt=""></div>
+        <div class="flex items-center gap-1">
+          1-30
+          <span class="text-gray">of 150</span>
+          <div class="mx-4"><img src="images/arrow__right.svg" alt="" /></div>
+          <div><img src="images/arrow__left.svg" alt="" /></div>
         </div>
       </div>
     </header>
@@ -516,7 +650,7 @@
               lightBlue: {
                 DEFAULT: "#F6FbFF",
               },
-              mainGray: {
+              gray: {
                 DEFAULT: "#6E737B",
                 primary: "#666666",
                 borderDark: "#303030",
@@ -528,10 +662,10 @@
               mainWhite: {
                 DEFAULT: "#FFFFFF",
               },
-              mainColor: {
+              green: {
                 DEFAULT: "#49BE6A",
               },
-              mainRed: {
+              red: {
                 DEFAULT: "#FF5454",
               },
             },
