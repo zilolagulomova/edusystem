@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <body class="p-0 m-0 box-border font-raleway">
+    <header class="">
+      <!-- NAVBAR PART -->
+      <div class="flex items-center bg-blue border-b border-gray-500">
+        <a class="w-[288px] pl-3 hidden md:block" href="#"
+          ><img
+            class="py-3"
+            width="200px"
+            src="images/logo.svg"
+            alt="EDU SYSTEM"
+        /></a>
+        <a href="index.html" class="md:hidden logo">
+          <img
+            src="images/logo-edusystem.png"
+            class="block pl-2"
+            width="40px"
+            height="40px"
+            alt=""
+          />
+        </a>
+        <div
+          class="flex justify-between pt-[18px] pb-[18px] sm:w-full items-center"
+        >
+          <form
+            class="ml-6 lg:ml-0 rounded py-2 px-3 mr-6 bg-white flex items-center sm:w-full sm:max-w-80 justify-between"
+          >
+            <input
+              class="outline-0 placeholder:text-gray-200 text-13 leading-4 placeholder:tracking-wide"
+              placeholder="Qidirish"
+              type="text"
+            />
+            <img
+              class="cursor-pointer"
+              src="images/search.svg"
+              alt="Qidirish"
+            />
+          </form>
+          <div class="flex items-center gap-4 mr-10 cursor-pointer">
+            <img src="images/profile.svg" alt="Profile" />
+            <div class="text-white text-xs font-semibold tracking-wide">
+              John Doe
+            </div>
+            <img src="images/down-arrow.svg" alt="arrowDown" />
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR AND TABLE PART -->
+      <div class="grid grid-cols-6">
+        <!--SIDEBAR  -->
+        <div
+          class="col-span-1 sidebar-desktop hidden bg-blue h-screen md:flex md:flex-col justify-between"
+        >
+          <div class="flex flex-col">
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/check_circle.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Tasklar</div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/add_to_photos.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Lidlar</div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 gap-2 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/rule.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Yo'qlama</div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/person.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">
+                O’quvchilar
+              </div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/Group.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Guruhlar</div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/teacher.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Ustozlar</div>
+            </button>
+            <button
+              class="flex pl-2 items-center gap-4 py-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/archive.svg" alt="check" />
+              <div class="text-white font-medium tracking-wider">Arxiv</div>
+            </button>
+            <button
+              class="flex pl-2 items-center justify-between pr-[7%] py-4 cursor-pointer focus:bg-green"
+            >
+              <div class="flex items-center gap-3">
+                <img src="images/monetization_on.svg" alt="check" />
+                <div class="text-white font-medium tracking-wider">Moliya</div>
+              </div>
+              <img src="images/down-arrow.svg" alt="arrow" />
+            </button>
+            <button
+              class="flex pl-2 items-center justify-between pr-[7%] py-4 cursor-pointer focus:bg-green"
+            >
+              <div class="flex items-center gap-4">
+                <img src="images/comment.svg" alt="check" />
+                <div class="text-white font-medium tracking-wider">
+                  Feedbacks
+                </div>
+              </div>
+              <img src="images/down-arrow.svg" alt="arrow" />
+            </button>
+          </div>
+          <button
+            class="flex text-white py-4 w-full pl-2 border-t border-gray-300 items-center gap-3 focus:bg-green"
+          >
+            <img src="images/Setting.svg" alt="" />
+            Sozlamalar
+          </button>
+        </div>
+        <div class="col-span-1 sidebar-mobile md:hidden block bg-blue h-screen">
+          <div class="flex flex-col pl-2">
+            <button
+              class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/check_circle.svg" alt="check" />
+            </button>
+            <button
+              class="items-center py-[18px] gap-4 cursor-pointer focus:bg-green"
+            >
+              <img src="images/add_to_photos.svg" alt="check" />
+            </button>
+            <button
+              class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/rule.svg" alt="check" />
+            </button>
+            <button
+              class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/person.svg" alt="check" />
+            </button>
+            <button
+              class="items-center gap-4 py-[23px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/Group.svg" alt="check" />
+            </button>
+            <button
+              class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/teacher.svg" alt="check" />
+            </button>
+            <button
+              class="items-center gap-4 py-[18px] cursor-pointer focus:bg-green"
+            >
+              <img src="images/archive.svg" alt="check" />
+            </button>
+            <button
+              class="items-center justify-between py-[18px] cursor-pointer focus:bg-green"
+            >
+              <div>
+                <img src="images/monetization_on.svg" alt="check" />
+              </div>
+            </button>
+            <button
+              class="items-center justify-between py-[18px] cursor-pointer focus:bg-green"
+            >
+              <div>
+                <img src="images/comment.svg" alt="check" />
+              </div>
+            </button>
+          </div>
+          <button
+            class="text-white py-4 border-t border-gray-300 items-center gap-3 focus:bg-green"
+          >
+            <img src="images/Setting.svg" class="pl-2" alt="" />
+          </button>
+        </div>
+
+        <!-- Single Page -->
+        <div class="col-span-5 p-6 bg-gray-100 flex flex-col">
+          <div class="flex justify-between items-center pr-8">
+            <div class="flex items-center gap-3">
+              <img src="images/Component_right_arrow.svg" alt="" />
+              <div>
+                <div class="font-semibold">
+                  Abdulkarimov Muhammadibrohim Muhammadyusuf o’g’li
+                </div>
+                <p class="text-gray text-xs font-medium leading-3">
+                  Lid ID: 24659841
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div
+                class="bg-green text-white px-9 py-3 rounded font-semibold text-sm"
+              >
+                O’quvchiga aylantirish
+              </div>
+              <img src="images/menu.svg" alt="" />
+            </div>
+          </div>
+          <div class="pt-5 flex gap-4 items-start">
+            <div class="bg-white p-5 max-w-[315px] w-full rounded-md">
+              <img class="block mx-auto" src="images/ava.svg" alt="" />
+              <div
+                class="flex justify-between pt-5 border-b border-gray-400 items-center pb-4"
+              >
+                <p class="text-xs font-medium text-dark-80">Status:</p>
+                <div
+                  class="flex text-xs gap-2 font-medium border border-gray p-1 text-dark-100 rounded-sm"
+                >
+                  Guruh ochilishini kutyapti
+                  <img src="images/code_dark.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="flex justify-between pt-5 border-b border-gray-400 items-center pb-4"
+              >
+                <p class="text-xs font-medium text-dark-80">Telefon raqam:</p>
+                <div class="text-sm font-medium text-blue-500">
+                  +998 90 123 45 67
+                </div>
+              </div>
+              <div
+                class="flex justify-between pt-5 border-b border-gray-400 items-center pb-4"
+              >
+                <p class="text-xs font-medium text-dark-80">Hudud:</p>
+                <div class="text-sm font-medium text-blue-500">
+                  Qoraqalpog’iston/Qo’ng’irot t.
+                </div>
+              </div>
+              <div
+                class="flex justify-between pt-5 border-b border-gray-400 items-center pb-4"
+              >
+                <p class="text-xs font-medium text-dark-80">Kelgan manbasi:</p>
+                <div class="text-sm font-medium text-blue-500">
+                  Do’stimdan eshitdim
+                </div>
+              </div>
+              <div
+                class="flex justify-between pt-5 border-b border-gray-400 items-center pb-4"
+              >
+                <p class="text-xs font-medium text-dark-80">Telegram ID:</p>
+                <div class="text-sm font-medium text-blue-500">443149298</div>
+              </div>
+              <div
+                class="flex justify-between pt-5 border-b border-gray-400 items-center pb-4"
+              >
+                <p class="text-xs font-medium text-dark-80">Qo’shdi:</p>
+                <div class="text-sm font-medium text-blue-500">
+                  Muhammadbobur Fayzullayev
+                </div>
+              </div>
+              <div
+                class="flex justify-between pt-5 border-b border-gray-400 items-center pb-4"
+              >
+                <p class="text-xs font-medium text-dark-80">
+                  Registratsiya sanasi:
+                </p>
+                <div class="text-sm font-medium text-blue-500">
+                  01.01.2021 / 10:22
+                </div>
+              </div>
+              <div class="flex justify-between pt-5 items-center">
+                <p class="text-xs font-medium text-dark-80">Tug’ilgan kuni:</p>
+                <div class="text-sm font-medium text-blue-500">11.24.2000</div>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex mt-8 items-center justify-between">
+                <button
+                  class="bg-white font-semibold text-sm active:bg-green active:text-white py-2 px-5 rounded-3xl"
+                >
+                  Kontaktlari
+                </button>
+                <button
+                  class="bg-white font-medium text-sm active:bg-green active:text-white py-2 px-5 rounded-3xl"
+                >
+                  Qiziqqan kurslari
+                </button>
+                <button
+                  class="bg-white font-medium text-sm active:bg-green active:text-white py-2 px-5 rounded-3xl"
+                >
+                  Tasklar
+                </button>
+                <button
+                  class="bg-white font-medium text-sm active:bg-green active:text-white py-2 px-5 rounded-3xl"
+                >
+                  Aloqa tarixi
+                </button>
+                <button
+                  class="bg-white font-medium text-sm active:bg-green active:text-white py-2 px-5 rounded-3xl"
+                >
+                  Xabarlar
+                </button>
+                <button
+                  class="bg-white font-medium text-sm active:bg-green active:text-white py-2 px-5 rounded-3xl"
+                >
+                  Amallar tarixi
+                </button>
+              </div>
+
+              <!-- Kontaktlar -->
+              <!-- <div class="bg-white mt-8 p-5 rounded-md">
+                <div
+                  class="flex items-center justify-between border-b pb-5 border-gray-400"
+                >
+                  <div class="text-dark-100 text-sm font-medium">
+                    Qo’shimcha telefon raqami
+                  </div>
+                  <div class="text-blue-500 text-md font-medium">
+                    +998 99 123 45 67
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-between border-b py-5 border-gray-400"
+                >
+                  <div class="text-dark-100 text-sm font-medium">
+                    Muhammadjonov Abdusattor
+                    <p class="text-gray font-light pt-1 tracking-wide">Otasi</p>
+                  </div>
+                  <div class="text-blue-500 text-md font-medium">
+                    +998 99 123 45 67
+                  </div>
+                </div>
+                <div class="flex items-center justify-between pt-5">
+                  <div class="text-dark-100 text-sm font-medium">
+                    Alijonova Laylo
+                    <p class="text-gray font-light pt-1 tracking-wide">Onasi</p>
+                  </div>
+                  <div class="text-blue-500 text-md font-medium">
+                    +998 99 123 45 67
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- Qiziqqan kurslari -->
+              <!-- <div class="overflow-x-auto">
+                <div>
+                    <div>
+                        <div class="p-5 bg-[url('images/border.svg')] flex justify-center bg-no-repeat bg-contain bg-center mt-5 border-dashed border-gray">
+                            <div class="flex items-center gap-3 "><img src="images/Vector.svg" alt="">Kursga qo'shish</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="mt-5 overflow-x-auto">
+                        <div class="uppercase flex items-center w-[2245px] justify-between">
+                            <div>Guruh nomi</div>
+                            <div>qo'shilgan sana</div>
+                            <div>kunlar</div>
+                            <div>vaqt</div>
+                            <div>boshlash</div>
+                            <div>Kommentariya</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+              
+              <!-- Xabarlar -->
+              <!-- <div>
+                  <div>
+                    <div>
+                        <div class="p-5 bg-[url('images/border.svg')] flex justify-center bg-no-repeat bg-contain bg-center mt-5 border-dashed border-gray">
+                            <div class="flex items-center gap-3 "><img src="images/Vector.svg" alt="">Xabar jo'natish</div>
+                        <div>
+                    </div> 
+                  </div>
+                  <div
+                   class="flex items-center bg-green mt-4 uppercase text-sm text-white py-3 px-3"
+                  >
+                    <div>Jo'natildi</div>
+                    <div class="pl-[175px] pr-[100px]">usul</div>
+                    <div>xabar matni</div>
+                  </div>
+                  <div
+                   class="flex items-start gap-20 bg-white text-sm py-3 px-3"
+                  >
+                    <div>
+                        <div>19.05.2021 / 14:40</div>
+                        <div class="text-gray text-xs">Muhammadbobur Fayzullayev</div>
+                    </div>
+                    <div class="">SMS, Bot</div>
+                    <div class="max-w-[328px] relative">Assalomu alaykum. <br> <br> 25-26 - sentabr kunlari imtihon o'tkazilishi sababli markazning co-working hududi va dars xonalari o'z faoliyatini to'xtatib turadi. 25 - sentabr soat 14:00 dan 16:00 ga qadar Muhammadjavohir Sur'atov tomonidan IT mutaxassislari uchun Master Class o'tkazilishi rejalashtirilmoqda. Qatnashish istagida bo'lgan o'quvchilarni soat 14:00 da kelishlarini so'raymiz. Kuningiz xayrli o'tsin!
+                        <img class="absolute top-1 -right-8" src="images/menu_dark.svg" alt="">
+                    </div>
+                  </div>
+                  <div
+                   class="flex items-start gap-20 bg-white text-sm py-3 px-3"
+                  >
+                    <div>
+                        <div>19.05.2021 / 14:40</div>
+                        <div class="text-gray text-xs">Muhammadbobur Fayzullayev</div>
+                    </div>
+                    <div class="">SMS, Bot</div>
+                    <div class="max-w-[328px] relative">Assalomu alaykum. <br> <br> 2-3 - oktyabr kunlari imtihon o'tkazilishi sababli markazning co-working hududi va dars xonalari o'z faoliyatini to'xtatib turadi. Kuningiz xayrli o'tsin!
+                    <img class="absolute top-1 -right-8" src="images/menu_dark.svg" alt="">
+                    </div>
+                  </div>
+              </div>
+            </div>
+              </div> -->
+
+              <!-- Amallar tarixi -->
+              <!-- <div class="mt-5">
+                <div
+                  class="flex items-center bg-green uppercase text-sm text-white py-2 px-3"
+                >
+                  <div>admin, sana</div>
+                  <div class="pl-[180px] pr-[250px]">amal</div>
+                  <div>izoh</div>
+                </div>
+                <div
+                  class="flex items-center bg-white gap-16 py-2 px-3"
+                >
+                  <div>
+                    <a
+                      class="text-blue-200 text-sm font-medium max-w-[198px] line-clamp-1"
+                      href="#"
+                      >Muhammadbobur Fayzullayev</a
+                    >
+                    <p class="text-gray text-xs font-light">
+                      27.08.2020 / 22:40
+                    </p>
+                  </div>
+                  <div class="bg-gray-600 py-1 px-4 rounded-3xl text-xs">
+                    Lid o'quvchiga aylantirildi
+                  </div>
+                  <div class="max-w-[213px] text-xs">
+                  </div>
+                  <div class="text-xs text-dark-80 max-w-[233px] line-clamp-1"></div>
+                </div>
+                <div
+                  class="flex items-center bg-white gap-16 py-2 px-3 my-1"
+                >
+                  <div>
+                    <a
+                      class="text-blue-200 text-sm font-medium max-w-[198px] line-clamp-1"
+                      href="#"
+                      >Muhammadbobur Fayzullayev</a
+                    >
+                    <p class="text-gray text-xs font-light">
+                      27.08.2020 / 22:40
+                    </p>
+                  </div>
+                  <div class="bg-gray-600 py-1 px-4 rounded-3xl text-xs">
+                    Lid o'quvchiga aylantirildi
+                  </div>
+                  <div class="max-w-[213px] text-xs">
+                  </div>
+                  <div class="text-xs text-dark-80 max-w-[233px] line-clamp-1"></div>
+                </div>
+                <div
+                  class="flex items-center bg-white gap-16 py-2 px-3 "
+                >
+                  <div>
+                    <a
+                      class="text-blue-200 text-sm font-medium max-w-[198px] line-clamp-1"
+                      href="#"
+                      >Muhammadbobur Fayzullayev</a
+                    >
+                    <p class="text-gray text-xs font-light">
+                      27.08.2020 / 22:40
+                    </p>
+                  </div>
+                  <div class="bg-gray-600 py-1 px-4 rounded-3xl text-xs  max-w-[280px] line-clamp-1">
+                    Lidga qiziqadigan kurslari biriktirildi
+                  </div>
+                  <div class="text-xs text-dark-80 max-w-[233px] line-clamp-1"></div>
+                </div>
+                <div
+                  class="flex items-center bg-white gap-16 py-2 px-3 my-1"
+                >
+                  <div>
+                    <a
+                      class="text-blue-200 text-sm font-medium max-w-[198px] line-clamp-1"
+                      href="#"
+                      >Muhammadbobur Fayzullayev</a
+                    >
+                    <p class="text-gray text-xs font-light">
+                      27.08.2020 / 22:40
+                    </p>
+                  </div>
+                  <div class="bg-gray-600 py-1 px-4 rounded-3xl text-xs">
+                    Lid o'quvchiga aylantirildi
+                  </div>
+                  <div class="max-w-[213px] text-xs">
+                  </div>
+                  <div class="text-xs text-dark-80 max-w-[233px] line-clamp-1"></div>
+                </div>
+                <div
+                  class="flex items-center bg-white gap-16 py-2 px-3"
+                >
+                  <div>
+                    <a
+                      class="text-blue-200 text-sm font-medium max-w-[198px] line-clamp-1"
+                      href="#"
+                      >Muhammadbobur Fayzullayev</a
+                    >
+                    <p class="text-gray text-xs font-light">
+                      27.08.2020 / 22:40
+                    </p>
+                  </div>
+                  <div class="bg-gray-600 py-1 px-4 rounded-3xl text-xs">
+                    Lid o'quvchiga aylantirildi
+                  </div>
+                  <div class="max-w-[213px] text-xs">
+                  </div>
+                  <div class="text-xs text-dark-80 max-w-[233px] line-clamp-1"></div>
+                </div>
+              </div> -->
+        </div>
+      </div>
+    </header>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              wiggle: {
+                "0%": { width: "0%" },
+                "25%": { left: "20%" },
+                "50%": { width: "30%" },
+                "100%": { width: "50%" },
+              },
+            },
+            container: {
+              center: true,
+              maxWidth: "1200px",
+            },
+            colors: {
+              blue: {
+                DEFAULT: "#122349",
+                100: "#F6FbFF",
+                200: "#065FD4",
+                500: "#263145",
+              },
+              gray: {
+                DEFAULT: "#6E737B",
+                100: "#EBEEF3",
+                200: "#666666",
+                300: "#3E444F",
+                400: "#CFD0D3",
+                500: "#303030",
+                600: "#E7E8E9",
+              },
+              dark: {
+                DEFAULT: "#000000",
+                80: "#3D444F",
+                100: "#0D1523",
+              },
+              white: {
+                DEFAULT: "#FFFFFF",
+              },
+              green: {
+                DEFAULT: "#49BE6A",
+              },
+              red: {
+                DEFAULT: "#FF5454",
+              },
+            },
+            fontFamily: {
+              raleway: "'Raleway', sans-serif;",
+            },
+            fontSize: {
+              13: "13px",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+\
+<!-- <div>
+                <div class="p-5 bg-[url('images/border.svg')] flex justify-center bg-no-repeat bg-contain bg-center mt-5 border-dashed border-gray">
+                    <div class="flex items-center gap-3 "><img src="images/Vector.svg" alt="">Kursga qo'shish</div>
+                <div>
+              </div> -->
+
+<!-- <div class="uppercase flex items-center justify-between">
+                <div>Guruh nomi</div>
+                <div>qo'shilgan sana</div>
+                <div>kunlar</div>
+                <div>vaqt</div>
+                <div>boshlash</div>
+                <div>Kommentariya</div>
+              </div> -->
